@@ -65,17 +65,17 @@ class DashboardController extends Controller
             $quota = $data->petaniMt()->groupBy('produk')
                 ->selectRaw('sum(qty) as sum, produk')
                 ->where('tahun', SettingService::currentTahun())
-//                ->where('mt', SettingService::currentMt())
+                ->where('mt', SettingService::currentMt())
                 ->pluck('sum','produk');
             $penebusan = $data->petaniMt()->groupBy('produk')
                 ->selectRaw('sum(qty_beli) as sum, produk')
                 ->where('tahun', SettingService::currentTahun())
-//                ->where('mt', SettingService::currentMt())
+                ->where('mt', SettingService::currentMt())
                 ->pluck('sum','produk');
             $sisa = $data->petaniMt()->groupBy('produk')
                 ->selectRaw('(sum(qty) - sum(qty_beli)) as sum, produk')
                 ->where('tahun', SettingService::currentTahun())
-//                ->where('mt', SettingService::currentMt())
+                ->where('mt', SettingService::currentMt())
                 ->pluck('sum','produk');
             return response()->json(['data' => $data, 'quota' => $quota, 'penebusan' => $penebusan, 'sisa' => $sisa], JsonResponse::HTTP_OK);
         } catch (\Exception $e) {
