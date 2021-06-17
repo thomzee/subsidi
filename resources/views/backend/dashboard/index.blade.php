@@ -220,6 +220,20 @@
                 });
                 e.preventDefault();
             }
+
+            if (parseInt(inputUrea.val()) < 0
+                || parseInt(inputSp36.val()) < 0
+                || parseInt(inputZa.val()) < 0
+                || parseInt(inputNpk.val()) < 0
+                || parseInt(inputOrganik.val()) < 0
+            ) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Penebusan Minus',
+                    text: 'Jumlah penebusan tidak boleh minus (kurang dari 0).',
+                });
+                e.preventDefault();
+            }
         });
 
         function resetTable() {

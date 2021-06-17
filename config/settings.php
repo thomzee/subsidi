@@ -11,9 +11,9 @@ return [
     'ketua' => [
         'cempaka_1' => 'ROBIDIN',
         'melati_1' => 'KUSTAMA',
-        'melati' => 'ROHADI',
-        'mawar_indah' => 'H. TARMO',
-        'cempaka' => 'MUKIDIN',
+        'melati' => 'MUKIDIN',
+        'mawar_indah' => 'ROHADI',
+        'cempaka' => 'H. TARMO',
     ],
     'gapoktan' => 'CEMPAKA',
     'desa' => 'TUGU',
