@@ -262,19 +262,19 @@
                     $('#kelompok').val(response.data.kelompok);
 
                     response.quota.urea !== undefined ? $('#quota-urea').text(response.quota.urea) : $('#quota-urea').text(0);
-                    response.quota["sp-36"] !== undefined ? $('#quota-sp-36').text(response.quota["sp-36"]) : $('#quota-sp-36').text(0);
+                    response.quota.sp_36 !== undefined ? $('#quota-sp-36').text(response.quota.sp_36) : $('#quota-sp-36').text(0);
                     response.quota.za !== undefined ? $('#quota-za').text(response.quota.za) : $('#quota-za').text(0);
                     response.quota.npk !== undefined ? $('#quota-npk').text(response.quota.npk) : $('#quota-npk').text(0);
                     response.quota.organik !== undefined ? $('#quota-organik').text(response.quota.organik) : $('#quota-organik').text(0);
 
                     response.penebusan.urea !== undefined ? $('#penebusan-urea').text(response.penebusan.urea) : $('#penebusan-urea').text(0);
-                    response.penebusan["sp-36"] !== undefined ? $('#penebusan-sp-36').text(response.penebusan["sp-36"]) : $('#penebusan-sp-36').text(0);
+                    response.penebusan.sp_36 !== undefined ? $('#penebusan-sp-36').text(response.penebusan.sp_36) : $('#penebusan-sp-36').text(0);
                     response.penebusan.za !== undefined ? $('#penebusan-za').text(response.penebusan.za) : $('#penebusan-za').text(0);
                     response.penebusan.npk !== undefined ? $('#penebusan-npk').text(response.penebusan.npk) : $('#penebusan-npk').text(0);
                     response.penebusan.organik !== undefined ? $('#penebusan-organik').text(response.penebusan.organik) : $('#penebusan-organik').text(0);
 
                     response.sisa.urea !== undefined ? $('#sisa-urea').text(response.sisa.urea) : $('#sisa-urea').text(0);
-                    response.sisa["sp-36"] !== undefined ? $('#sisa-sp-36').text(response.sisa["sp-36"]) : $('#sisa-sp-36').text(0);
+                    response.sisa.sp_36 !== undefined ? $('#sisa-sp-36').text(response.sisa.sp_36) : $('#sisa-sp-36').text(0);
                     response.sisa.za !== undefined ? $('#sisa-za').text(response.sisa.za) : $('#sisa-za').text(0);
                     response.sisa.npk !== undefined ? $('#sisa-npk').text(response.sisa.npk) : $('#sisa-npk').text(0);
                     response.sisa.organik !== undefined ? $('#sisa-organik').text(response.sisa.organik) : $('#sisa-organik').text(0);

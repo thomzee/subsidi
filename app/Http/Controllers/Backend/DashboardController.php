@@ -101,7 +101,7 @@ class DashboardController extends Controller
             foreach ($products as $product => $qty) {
                 if ($qty > 0) {
                     $petani->petaniMt()->create([
-                        'qty' => null,
+                        'qty' => 0,
                         'produk' => $product,
                         'mt' => SettingService::currentMt(),
                         'tahun' => SettingService::currentTahun(),

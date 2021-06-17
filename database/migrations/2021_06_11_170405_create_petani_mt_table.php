@@ -17,8 +17,8 @@ class CreatePetaniMtTable extends Migration
             $table->uuid('id')->primary();
             $table->uuid('petani_id')->nullable();
             $table->foreign('petani_id')->references('id')->on('petani');
-            $table->integer('qty')->nullable();
-            $table->integer('qty_beli')->nullable();
+            $table->integer('qty')->default(0);
+            $table->integer('qty_beli')->default(0);
             $table->string('produk', 10)->nullable();
             $table->integer('mt')->nullable();
             $table->integer('tahun')->default(2021);
