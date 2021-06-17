@@ -5,13 +5,11 @@ namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
 use App\Models\Petani;
-use App\Models\PetaniMt;
 use App\Services\SettingService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
-use Webpatser\Uuid\Uuid;
 
 class DashboardController extends Controller
 {
