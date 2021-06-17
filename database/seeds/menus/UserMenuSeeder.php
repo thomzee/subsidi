@@ -56,7 +56,6 @@ class UserMenuSeeder extends \Illuminate\Database\Seeder
 
         $name = 'Import Data';
         $menus = [
-            'Import Bulanan',
             'Import RDKK',
         ];
         $parent = $menu->create([

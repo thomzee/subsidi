@@ -25,11 +25,6 @@ return [
             'action' => ['index', 'detail', 'create', 'edit', 'delete'],
         ],
         'backend/bulanan' => [
-            'index'  => 'index',
-            'action' => ['index', 'detail', 'create', 'edit', 'delete'],
-        ],
-        'backend/import-bulanan' => [
-            'index'  => 'index',
             'action' => ['index', 'detail', 'create', 'edit', 'delete'],
         ],
         'backend/import-rdkk' => [

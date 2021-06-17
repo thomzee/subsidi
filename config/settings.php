@@ -19,7 +19,7 @@ return [
     'desa' => 'TUGU',
     'kecamatan' => 'LELEA',
     'subsektor' => 'Tanaman Pangan',
-    'kios' => 'Andri Tani',
+    'kios' => 'ANDRI TANI',
     'produk' => [
         'urea' => 'UREA',
         'sp_36' => 'SP-36',
